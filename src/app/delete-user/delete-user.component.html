@@ -1,0 +1,11 @@
+<!-- <p>delete-user works!</p> -->
+<div class="container mt-4">
+  <h2>Delete User</h2>
+  <form (submit)="deleteUser(); $event.preventDefault();">
+    <div class="form-group">
+      <label>User ID:</label>
+      <input type="number" class="form-control" [(ngModel)]="userId" name="id">
+    </div>
+    <button type="submit" class="btn btn-danger">Delete</button>
+  </form>
+</div>
